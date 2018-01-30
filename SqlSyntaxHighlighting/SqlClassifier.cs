@@ -24,13 +24,13 @@ namespace SqlSyntaxHighlighting
 			"UNION", "EXCEPT",
 			"WHERE", "LIKE", "BETWEEN", "HAVING", "EXISTS",
 			"ORDER BY", "ASC", "DESC", "OVER", "GROUP BY", "LIMIT", "OFFSET",
-			"PARTITION BY", "WINDOW"
+			"PARTITION BY", "WINDOW",
 			"ON", "IN", "IS", "NOT", "AS", "AND", "OR", "ALL", "ANY",
 			"CREATE", "ALTER", "DROP",
 			"TEMP", "TEMPORARY",
 			"TABLE", "FUNCTION", "PROCEDURE", "VIEW", "SCHEMA",
 			"DECLARE", "SET", "READ ONLY",
-			"IF", "BEGIN", "THEN", "ELSE", "END", "FOR", "WHILE", "NULL",
+			"IF", "BEGIN", "THEN", "ELSE", "END", "FOR", "WHILE", "NULL", "CASE", "WHEN",
 			"TRANSACTION", "COMMIT", "ROLLBACK",
 			"EXEC", "RETURN", "RETURNS", "PRINT", "USE", "USING", "RETURNING",
 			"COPY", "STDIN", "STDOUT",
@@ -48,7 +48,7 @@ namespace SqlSyntaxHighlighting
 			"LEFT", "RIGHT", "SUBSTRING", "LTRIM", "RTRIM", "UPPER", "LOWER", "CHARINDEX", "LEN", "STUFF",
 			"GETDATE", "DATEADD", "DATEDIFF", "DATEPART", "DATENAME",
 			"CONVERT", "CAST",
-			"ROW_NUMBER"
+			"ROW_NUMBER", "NULLIF"
 		};
 
 		private readonly Regex variables = new Regex(@"(?:^|[""\s(+,=])(?<Variable>[@\:][a-zA-Z0-9_]+)(?:$|[""\s)+,])", RegexOptions.Multiline);
